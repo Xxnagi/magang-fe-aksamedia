@@ -11,7 +11,7 @@ export function login(username, password) {
   return false;
 }
 
-export function isAunthenticated() {
+export function isAuthenticated() {
   return !!localStorage.getItem("user");
 }
 
