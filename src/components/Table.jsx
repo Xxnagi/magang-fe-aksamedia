@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Modal from "./Modal";
+import { initialBooks } from "../utils/books";
 
 const Table = () => {
   const [data, setData] = useState([]);
@@ -15,6 +16,18 @@ const Table = () => {
   const [currentEdit, setCurrentEdit] = useState(null);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    const storedData = JSON.parse(localStorage.getItem("books"));
+    if (!storedData) {
+      localStorage.setItem("books", JSON.stringify(initialBooks));
+      setData(initialBooks);
+    } else {
+      setData(storedData);
+    }
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     setLoading(true);
