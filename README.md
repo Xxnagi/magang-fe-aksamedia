@@ -51,13 +51,13 @@ Ensure that you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/aksa-library.git
+   git clone https://github.com/Xxnagi/magang-fe-aksamedia.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd aksa-library
+   cd magang-fe-aksamedia
    npm install
    ```
 
