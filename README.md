@@ -2,6 +2,13 @@
 
 Aksa Library is a web application built with Vite and Tailwind CSS. It is designed to allow users to manage data via a CRUD interface, with no backend API. All functionalities like authentication, data management, and theme switching are handled locally.
 
+## Credential Login
+
+- **Username**: `admin`
+- **Password**: `admin123`
+
+These credentials are statically defined for logging in.
+
 ## Features
 
 - **Authentication (Login)**: 
@@ -34,6 +41,7 @@ Aksa Library is a web application built with Vite and Tailwind CSS. It is design
   - When the name is changed, it is automatically reflected in the navbar.
   - The new name persists even after a page refresh.
 
+
 ## Setup
 
 ### Prerequisites
@@ -43,13 +51,13 @@ Ensure that you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/aksa-library.git
+   git clone https://github.com/Xxnagi/magang-fe-aksamedia.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd aksa-library
+   cd magang-fe-aksamedia
    npm install
    ```
 
@@ -92,3 +100,7 @@ This project is licensed under the MIT License.
 ---
 
 Feel free to contribute to this project by opening issues or submitting pull requests.
+
+--- 
+
+Now the credential login section is included with the specified username and password.
