@@ -99,7 +99,7 @@ const Modal = ({ isOpen, onClose, onSave, initialData = null }) => {
         <div className="relative inline-block bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg w-full">
           <div className="bg-white dark:bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
             <div className="sm:flex sm:items-start">
-              <div className="mt-3 text-center sm:mt-0 sm:text-left w-full">
+              <div className="mt-3  sm:mt-0 text-left w-full">
                 <h3
                   className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 mb-4"
                   id="modal-title"
