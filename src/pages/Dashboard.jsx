@@ -1,15 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Table from "../components/Table";
 
 const Dashboard = () => {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
-
-  const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("user");
-    navigate("/login");
-  };
 
   if (!user) {
     navigate("/login");
@@ -17,12 +11,17 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto p-4">
-        <h2 className="text-2xl font-bold">Welcome, {user.username}!</h2>
-        <Table />
+    <div className=" bg-gray-100 dark:bg-gray-900 p-6 transition-colors duration-200">
+      <div className="container mx-auto py-4">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+          Dashboard
+        </h2>
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <Table />
+        </div>
       </div>
     </div>
   );
 };
+
 export default Dashboard;

@@ -27,11 +27,13 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">Edit Profile</h2>
-          <p className="mt-2 text-sm text-gray-600">
+    <div className=" bg-gray-100 dark:bg-gray-900 p-6 ">
+      <div className="container mx-auto py-4">
+        <div className=" mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Edit Profile
+          </h2>
+          <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 ">
             Update your personal information
           </p>
         </div>
@@ -52,7 +54,7 @@ const Profile = () => {
           <div>
             <label
               htmlFor="fullName"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-gray-700 dark:text-white mb-2"
             >
               Full Name
             </label>
@@ -62,7 +64,7 @@ const Profile = () => {
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="Enter your full name"
+              placeholder={user?.fullName}
             />
           </div>
 
@@ -78,26 +80,6 @@ const Profile = () => {
             {loading ? "Saving..." : "Save Changes"}
           </button>
         </form>
-
-        <div className="mt-6">
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-300" />
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-white text-gray-500">
-                Profile Information
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-6 text-sm text-gray-500">
-            <p>Email: {user?.email}</p>
-            <p>
-              Member since: {new Date(user?.createdAt).toLocaleDateString()}
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
