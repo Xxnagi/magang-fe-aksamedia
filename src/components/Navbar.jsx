@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/dashboard" className="flex gap-2 items-center">
           <img src="logo.png" alt="" className="w-10" />
-          <h1 className="text-lg font-bold text-gray-800 dark:text-white">
+          <h1 className="text-lg font-bold text-gray-800 dark:text-white hidden sm:block">
             AKSA LIBRARY
           </h1>
         </Link>
