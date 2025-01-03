@@ -1,10 +1,13 @@
-Sure! Here's the updated README with the credential details added:
-
----
-
 # Aksa Library
 
 Aksa Library is a web application built with Vite and Tailwind CSS. It is designed to allow users to manage data via a CRUD interface, with no backend API. All functionalities like authentication, data management, and theme switching are handled locally.
+
+## Credential Login
+
+- **Username**: `admin`
+- **Password**: `admin123`
+
+These credentials are statically defined for logging in.
 
 ## Features
 
@@ -38,12 +41,6 @@ Aksa Library is a web application built with Vite and Tailwind CSS. It is design
   - When the name is changed, it is automatically reflected in the navbar.
   - The new name persists even after a page refresh.
 
-## Credential Login
-
-- **Username**: `admin`
-- **Password**: `admin123`
-
-These credentials are statically defined for logging in.
 
 ## Setup
 
