@@ -6,7 +6,6 @@ const CREDENTIALS = {
 
 export function login(username, password) {
   if (username === CREDENTIALS.username && password === CREDENTIALS.password) {
-    // Simpan data pengguna di local storage
     localStorage.setItem("user", JSON.stringify(CREDENTIALS));
     localStorage.setItem("isLoggedIn", "true");
     return true;
@@ -19,6 +18,5 @@ export function isAuthenticated() {
 }
 
 export function logout() {
-  // Tandai status pengguna sebagai logout
   localStorage.removeItem("isLoggedIn");
 }
